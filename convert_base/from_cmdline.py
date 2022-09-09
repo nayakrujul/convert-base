@@ -7,9 +7,22 @@ def convert_from_cmdline():
     parser.add_argument('number', metavar ='number', type=str, nargs=1, help= 'The number to convert')
     parser.add_argument('fbase', metavar ='fbase', type=int, nargs=1, help= 'The base to convert from')
     parser.add_argument('tbase', metavar ='tbase', type=int, nargs=1, help= 'The base to convert to')
+    parser.add_argument('-g', dest='group', type=int, nargs='?', const=4, default=0, help= 'Group the digits?')
     args = parser.parse_args()
     try:
-        print(convert(args.number[0], args.fbase[0], args.tbase[0]))
+        c = convert(args.number[0], args.fbase[0], args.tbase[0])
+        if args.group <= 0:
+            print(c)
+        else:
+            i = 0
+            r = ''
+            for d in reversed(c):
+                r += d
+                i += 1
+                if i == 4:
+                    i = 0
+                    r += ' '
+            print(''.join(reversed(r)))
         return 0
     except ValueError as e:
         print('An error occurred:', e)
