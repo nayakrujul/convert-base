@@ -1,0 +1,12 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+base_x_converter.egg-info/PKG-INFO
+base_x_converter.egg-info/SOURCES.txt
+base_x_converter.egg-info/dependency_links.txt
+base_x_converter.egg-info/entry_points.txt
+base_x_converter.egg-info/top_level.txt
+convert_base/__init__.py
+convert_base/from_cmdline.py
+convert_base/from_python.py

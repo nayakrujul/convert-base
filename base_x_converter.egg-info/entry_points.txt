@@ -1,0 +1,3 @@
+[console_scripts]
+convert = convert_base.from_cmdline:convert_from_cmdline
+
