@@ -61,6 +61,11 @@ from convert_base import convert
 print(convert('ABC', 16, 2))
 ```
 
+The parameters are:
+* The number to convert (`str`)
+* The base to convert from (`int`)
+* The base to convert to (`int`)
+
 ### Use your own alphabet
 
 ```python
