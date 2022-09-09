@@ -19,10 +19,15 @@ def convert_from_cmdline():
             for d in reversed(c):
                 r += d
                 i += 1
-                if i == 4:
+                if i == args.group:
                     i = 0
                     r += ' '
-            print(''.join(reversed(r)))
+            r = ''.join(reversed(r))
+            if r.startswith(' '):
+                print(r[1:])
+            else:
+                l, *m = r.split()
+                print(l.zfill(args.group), *m)
         return 0
     except ValueError as e:
         print('An error occurred:', e)
