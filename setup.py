@@ -4,7 +4,7 @@ long_description = 'Convert from one base to another base.'
 
 setup(
   name = 'base-x-converter',
-  version = '1.0',
+  version = '1.1',
   license='Apache',
   description = 'Convert from one base to another base.',
   author = 'Rujul Nayak',
