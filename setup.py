@@ -1,17 +1,17 @@
 from setuptools import setup, find_packages
 
-long_description = 'Shorten your Python code with shorter syntax - read the docs at https://www.github.com/nayakrujul/python-plus'
+long_description = 'Convert from one base to another base.'
 
 setup(
-  name = 'shorter-python',
-  version = '5.0',
+  name = 'base-x-converter',
+  version = '0.1',
   license='Apache',
-  description = 'Shorten your Python code with shorter syntax.',
+  description = 'Convert from one base to another base.',
   author = 'Rujul Nayak',
   author_email = 'rujulnayak@outlook.com',
-  url = 'https://github.com/nayakrujul/python-plus',
-  download_url = 'https://github.com/nayakrujul/python-pluso/archive/refs/tags/v_01.tar.gz',
-  keywords = ['shorter', 'syntax'],
+  url = 'https://github.com/nayakrujul/convert-base',
+  download_url = 'https://github.com/nayakrujul/convert-base/archive/refs/tags/v_01.tar.gz',
+  keywords = ['base', 'converter'],
   install_requires=[
       ],
   classifiers=[
@@ -32,7 +32,7 @@ setup(
   packages = find_packages(),
   entry_points = {
     'console_scripts': [
-      'pythonplus = python_plus.compiler:from_file'
+      'convert = convert_base.from_cmdline:convert_from_cmdline'
     ]
   }
 )
